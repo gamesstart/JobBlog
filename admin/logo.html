@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>登录页面</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<script lanague="javascript">
+function ChkLogin(){
+	var reg=/^[0-9a-zA-Z]{1,20}$/;
+	if(!reg.test(frmLogin.username.value)){
+		alert("请正确输入用户名！");
+		frmLogin.username.focus();
+		return false;
+	}
+	if(frmLogin.passwd.value==""){
+		alert("请输入密码！");
+		frmLogin.passwd.focus();
+		return false;
+	}
+	return true;
+}
+
+</script>
+
+<body style="background-color:#000000;">
+<div class="admin_bg">
+   <div class="admin_img">
+    <form action="login.php" method="post"  name="frmLogin" id="frmLogin" onSubmit="return ChkLogin();" target="_top">
+       <div class="admin_name">
+            <ul>
+              <li>用&nbsp;&nbsp;&nbsp;户：&nbsp;&nbsp;&nbsp;<input class=midline1  id="username" name="username" type="text" style="width:200px;" /></li><br>
+              <li>密&nbsp;&nbsp;&nbsp;码：&nbsp;&nbsp;&nbsp;<input class=midline1 id="passwd" name="passwd" type="password" style="width:200px;"> <input name="log" type="hidden" value="1" /></li>
+           </ul>
+       </div>
+       <div class="adminlogin">
+           <INPUT id=btnmodify type=image src="images/login.jpg" value=登录 name=btnmodify>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       </div>
+     </form>
+   </div>
+   <div class="admin_foot">Copyright &copy; 2011-2012 <a href="/">返回首页</a> </div>
+</div>
+
+
+</body>
+</html>
