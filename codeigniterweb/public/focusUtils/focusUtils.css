@@ -1,0 +1,20 @@
+/*焦点图幻灯片*/
+.focus_box{}
+.focus_mask{position: absolute;left:-2px;top:-2px;z-index:100;width: 60px;height: 60px;background-position: 0 -140px;}
+
+.Pixviewer{position:relative;}
+.Pixviewer img{padding: 0;border: 0;}
+.Pixviewer .PvBigPic{padding:0px;text-align:center;overflow:hidden;background:#000;}
+.Pixviewer a:link,.Pixviewer a:visited{color:#000;text-decoration:none;}
+.Pixviewer a:hover{color:red;text-decoration:none;}
+.Pixviewer .PvNumber{font-size:11px;line-height: normal;color:#fff;overflow:hidden; position:absolute; right:1px; z-index:50;text-align:right;}
+.Pixviewer .NumberHover{background-color:#ce0609;}
+.Pixviewer .NumberLeave{background-color:none;}
+.Pixviewer .PvNumberBg{position:absolute; right:1px;z-index:49; height:13px; width:250px;background:url(numberbg.png) no-repeat 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop, src='http://demo.hihww.com/templets/default/script/ShowSlibe/numberbg.png');_background:none;}
+.Pixviewer .Triangle{width:21px;height:17px;position:absolute;z-index:49;background:url(triangle.png) no-repeat 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop, src='http://demo.hihww.com/templets/default/script/ShowSlibe/triangle.png');_background:none;}
+.Pixviewer .BorderHack1{background-color:#ccc;position:absolute;z-index:51;height:1px;top:0px; left:0px;font-size:0px;overflow:hidden;}
+.Pixviewer .BorderHack2{background-color:#ccc;position:absolute;z-index:51;width:1px;top:0px;right:0px;font-size:0px;overflow:hidden;}
+.Pixviewer .BorderHack3{background-color:#ccc;position:absolute;z-index:51;height:1px;left:0px;font-size:0px;overflow:hidden;}
+.Pixviewer .BorderHack4{background-color:#ccc;position:absolute;z-index:51;width:1px;left:0px;top:0px;font-size:0px;overflow:hidden;}
+.Pixviewer .Title{background-color:#cccccc;}
+.focus_box #focusData_01{ display:none;}
